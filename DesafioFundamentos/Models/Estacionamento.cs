@@ -20,7 +20,7 @@ namespace DesafioFundamentos.Models
             Console.WriteLine("Digite a placa do veículo para estacionar:");
             string adicionandoVeiculo = Console.ReadLine();
 
-            // Verifica se o veículo existe
+            // Verifica se o veículo ja esta estacionado
             if (veiculos.Any(x => x.ToUpper() == adicionandoVeiculo.ToUpper()))
             {
                 Console.WriteLine($"A placa {adicionandoVeiculo} já esta estacionado aqui. Confira se digitou a placa corretamente.");
@@ -68,7 +68,7 @@ namespace DesafioFundamentos.Models
             if (veiculos.Any())
             {
                 Console.WriteLine("Os veículos estacionados são:");
-                
+
                 // OBJETIVO: Realizar um laço de repetição, exibindo os veículos estacionados
 
                 foreach(string placa in veiculos)
